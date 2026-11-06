@@ -30,7 +30,7 @@ Sign in at `/login` with `ADMIN_EMAIL` / `ADMIN_PASSWORD`. The admin dashboard i
 
 Nothing was invented. Fields the PDFs do not cover (dimensions, what's included, how to use, all details of the 100 LED panel) are left empty and the site shows "Available on request". Fill them in from **Admin → Products**.
 
-**One price is deliberately not linked:** the price list's "LED Face Mask" row could be either the *Red Light Therapy Face Mask* or the *Starter LED Face Mask*. It sits in **Admin → Pricing** as an unlinked row until you choose the product.
+**Price links:** the price list's "LED Face Mask" row is linked to the *Red Light Therapy Face Mask*; the *Starter LED Face Mask* has its own price, supplied by the owner after the November 2026 list. Every product has a 20-unit minimum order. Change any link in **Admin → Pricing**.
 
 ## How the key features work
 
