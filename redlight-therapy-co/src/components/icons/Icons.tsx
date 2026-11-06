@@ -1,0 +1,11 @@
+type P = { className?: string };
+const base = { fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
+export const IconBoxes = ({ className }: P) => (<svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...base}><path d="M3 8l9-5 9 5-9 5-9-5z" /><path d="M3 8v8l9 5 9-5V8" /><path d="M12 13v8" /></svg>);
+export const IconStack = ({ className }: P) => (<svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...base}><rect x="3" y="4" width="18" height="5" rx="1.5" /><rect x="3" y="10" width="18" height="5" rx="1.5" /><rect x="3" y="16" width="18" height="4" rx="1.5" /></svg>);
+export const IconGrid = ({ className }: P) => (<svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...base}><rect x="3" y="3" width="7" height="7" rx="2" /><rect x="14" y="3" width="7" height="7" rx="2" /><rect x="3" y="14" width="7" height="7" rx="2" /><rect x="14" y="14" width="7" height="7" rx="2" /></svg>);
+export const IconDoc = ({ className }: P) => (<svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...base}><path d="M7 3h7l5 5v13H7z" /><path d="M14 3v5h5M10 13h6M10 17h6" /></svg>);
+export const IconRoute = ({ className }: P) => (<svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...base}><circle cx="6" cy="18" r="2.5" /><circle cx="18" cy="6" r="2.5" /><path d="M8.5 18H15a3 3 0 000-6H9a3 3 0 010-6h6.5" /></svg>);
+export const IconGlobe = ({ className }: P) => (<svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...base}><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18" /></svg>);
+export const IconMail = ({ className }: P) => (<svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...base}><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg>);
+export const IconCheck = ({ className }: P) => (<svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...base}><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>);
+export const IconDownload = ({ className }: P) => (<svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...base}><path d="M12 4v11M7 10l5 5 5-5M5 20h14" /></svg>);
