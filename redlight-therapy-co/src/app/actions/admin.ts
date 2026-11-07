@@ -429,7 +429,7 @@ const importItem = z.object({
   sort: z.number().int().optional(),
   summary: z.string().max(400).optional(),
   description: z.string().max(10000).optional(),
-  image: z.string().max(300).regex(/^\/(images|media)\/[\w./-]+$/, "image must be a site path like /images/...").optional(),
+  image: z.string().max(300).regex(/^(\/(images|media)\/[\w./-]+|https:\/\/[a-z0-9-]+\.public\.blob\.vercel-storage\.com\/[\w./-]+)$/, "image must be a site path like /images/... or a Vercel Blob URL").optional(),
   imageAlt: z.string().max(300).optional(),
   models: z.array(z.object({ model: z.string(), note: z.string().default("") })).optional(),
   features: z.array(z.string()).optional(),

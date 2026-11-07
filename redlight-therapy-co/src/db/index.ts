@@ -5,11 +5,12 @@ import * as schema from "./schema";
 const globalForDb = globalThis as unknown as { pool?: Pool };
 
 function createPool() {
-  const url = process.env.DATABASE_URL;
+  // DATABASE_URL, or POSTGRES_URL as set by some Vercel database integrations.
+  const url = process.env.DATABASE_URL || process.env.POSTGRES_URL;
   if (!url) throw new Error("DATABASE_URL is not set");
   return new Pool({
     connectionString: url,
-    max: 10,
+    max: process.env.VERCEL ? 3 : 10,
     ssl: process.env.DATABASE_SSL === "require" ? { rejectUnauthorized: true } : undefined,
   });
 }
